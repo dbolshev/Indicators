@@ -1,9 +1,9 @@
-.. DASU indicators documentation master file, created by
+﻿.. DASU indicators documentation master file, created by
    sphinx-quickstart on Thu Apr  5 15:35:26 2018.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to DASU indicators's documentation!
+Welcome to DASU indicators' documentation!
 ===========================================
 
 .. toctree::
@@ -12,7 +12,7 @@ Welcome to DASU indicators's documentation!
 
 
 
-Indices and tables
+Індекси/поушк
 ==================
 
 * :ref:`genindex`
