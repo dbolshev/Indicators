@@ -12,7 +12,7 @@ Welcome to DASU indicators' documentation!
 
 
 
-Індекси/поушк
+Індекси/пошук
 ==================
 
 * :ref:`genindex`
