@@ -11,11 +11,3 @@
    :caption: Зміст:
    
    indicators
-
-
-Індекси/пошук
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
