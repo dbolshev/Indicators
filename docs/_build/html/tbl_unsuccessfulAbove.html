@@ -41,13 +41,13 @@
           <div class="body" role="main">
             
   <div class="section" id="tbl-unsuccessfulabove">
-<h1>tbl_unsuccessfulAbove<a class="headerlink" href="#tbl-unsuccessfulabove" title="Постійне посилання на цей заголовок">¶</a></h1>
-<div class="section" id="id1">
-<h2>Суть аналітичної таблиці<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h2>
+<span id="id1"></span><h1>tbl_unsuccessfulAbove<a class="headerlink" href="#tbl-unsuccessfulabove" title="Постійне посилання на цей заголовок">¶</a></h1>
+<div class="section" id="id2">
+<h2>Суть аналітичної таблиці<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
 <p>Дана аналітична таблиця показує кількість неуспішних відкритих процедур певного замовника по певному предмету закупівлі від поточної дати до дати проведення останньої переговорної процедури по цьому предмету закупівлі у цього замовника (або від поточної дати до дати, що передує поточній на 1 рік, якщо такої переговорної процедури немає).</p>
 </div>
-<div class="section" id="id2">
-<h2>Форма аналітичної таблиці<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id3">
+<h2>Форма аналітичної таблиці<a class="headerlink" href="#id3" title="Постійне посилання на цей заголовок">¶</a></h2>
 <p>Аналітична таблиця містить наступну інформацію:</p>
 <ul class="simple">
 <li>Замовник</li>
@@ -93,10 +93,10 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="id3">
-<h2>Розрахунок аналітичної таблиці<a class="headerlink" href="#id3" title="Постійне посилання на цей заголовок">¶</a></h2>
 <div class="section" id="id4">
-<h3>Джерела даних для розрахунку<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h3>
+<h2>Розрахунок аналітичної таблиці<a class="headerlink" href="#id4" title="Постійне посилання на цей заголовок">¶</a></h2>
+<div class="section" id="id5">
+<h3>Джерела даних для розрахунку<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h3>
 <p>Для розрахунку аналітичної таблиці вікористовуються наступні джерела даних:</p>
 <ul class="simple">
 <li>API модуля тендеринга електронної системи закупівель</li>
@@ -104,12 +104,12 @@
 <li>Транзакційна змінна <a class="reference internal" href="tv_procuringEntity.html#tv-procuringentity"><span class="std std-ref">tv_procuringEntity</span></a></li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h3>Частота розрахунку<a class="headerlink" href="#id5" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="section" id="id6">
+<h3>Частота розрахунку<a class="headerlink" href="#id6" title="Постійне посилання на цей заголовок">¶</a></h3>
 <p>Аналітична таблиця розраховується раз на добу.</p>
 </div>
-<div class="section" id="id6">
-<h3>Поля для розрахунку<a class="headerlink" href="#id6" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="section" id="id7">
+<h3>Поля для розрахунку<a class="headerlink" href="#id7" title="Постійне посилання на цей заголовок">¶</a></h3>
 <p>Для розрахунку використовуються наступні поля з API модуля тендеринга:</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">data.id</span></code></li>
@@ -123,8 +123,8 @@
 <li><a class="reference internal" href="tv_procuringEntity.html#tv-procuringentity"><span class="std std-ref">tv_procuringEntity</span></a></li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h3>Формула розрахунку<a class="headerlink" href="#id7" title="Постійне посилання на цей заголовок">¶</a></h3>
+<div class="section" id="id8">
+<h3>Формула розрахунку<a class="headerlink" href="#id8" title="Постійне посилання на цей заголовок">¶</a></h3>
 <p>Для кожного замовника <a class="reference internal" href="tv_procuringEntity.html#tv-procuringentity"><span class="std std-ref">tv_procuringEntity</span></a> та предмету закупівлі <a class="reference internal" href="tv_subjectOfProcurement.html#tv-subjectofprocurement"><span class="std std-ref">tv_subjectOfProcurement</span></a> виконуються наступні дії:</p>
 <ol class="arabic">
 <li><p class="first">Визначається дата, з якої починається підрахунок неуспішних відкритих процедур. Порядок визначення цієї дати наступний:</p>
@@ -162,13 +162,13 @@
   <h3><a href="index.html">Зміст</a></h3>
   <ul>
 <li><a class="reference internal" href="#">tbl_unsuccessfulAbove</a><ul>
-<li><a class="reference internal" href="#id1">Суть аналітичної таблиці</a></li>
-<li><a class="reference internal" href="#id2">Форма аналітичної таблиці</a></li>
-<li><a class="reference internal" href="#id3">Розрахунок аналітичної таблиці</a><ul>
-<li><a class="reference internal" href="#id4">Джерела даних для розрахунку</a></li>
-<li><a class="reference internal" href="#id5">Частота розрахунку</a></li>
-<li><a class="reference internal" href="#id6">Поля для розрахунку</a></li>
-<li><a class="reference internal" href="#id7">Формула розрахунку</a></li>
+<li><a class="reference internal" href="#id2">Суть аналітичної таблиці</a></li>
+<li><a class="reference internal" href="#id3">Форма аналітичної таблиці</a></li>
+<li><a class="reference internal" href="#id4">Розрахунок аналітичної таблиці</a><ul>
+<li><a class="reference internal" href="#id5">Джерела даних для розрахунку</a></li>
+<li><a class="reference internal" href="#id6">Частота розрахунку</a></li>
+<li><a class="reference internal" href="#id7">Поля для розрахунку</a></li>
+<li><a class="reference internal" href="#id8">Формула розрахунку</a></li>
 </ul>
 </li>
 </ul>

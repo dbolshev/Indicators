@@ -4,6 +4,7 @@
 .. toctree::
    :maxdepth: 1
 
+   DASU-1
    DASU-3-1
    DASU-3-2
    DASU-3-3
