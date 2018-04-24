@@ -15,6 +15,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Індекс" href="genindex.html" />
     <link rel="search" title="Пошук" href="search.html" />
+    <link rel="next" title="Перелік транзакційних змінних" href="transactional_variables.html" />
     <link rel="prev" title="DASU-3-2 Документи визначення переможця не позначені електронним підписом" href="DASU-3-2.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -23,6 +24,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Загальний індекс"
              accesskey="I">індекс</a></li>
+        <li class="right" >
+          <a href="transactional_variables.html" title="Перелік транзакційних змінних"
+             accesskey="N">наступний</a> |</li>
         <li class="right" >
           <a href="DASU-3-2.html" title="DASU-3-2 Документи визначення переможця не позначені електронним підписом"
              accesskey="P">попередній</a> |</li>
@@ -104,7 +108,7 @@
 </div>
 <div class="section" id="id14">
 <h3>Поля для розрахунку<a class="headerlink" href="#id14" title="Постійне посилання на цей заголовок">¶</a></h3>
-<p>Для розрахунку індикатора використвоуються наступні поля с API модуля тендеринга:</p>
+<p>Для розрахунку індикатора використовуються наступні поля з API модуля тендеринга:</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">data.contracts</span></code></li>
 <li><code class="docutils literal notranslate"><span class="pre">data.contracts.documents</span></code></li>
@@ -117,7 +121,7 @@
 <h3>Формула розрахунку<a class="headerlink" href="#id15" title="Постійне посилання на цей заголовок">¶</a></h3>
 <p>Індикатор розраховується наступним чином:</p>
 <ol class="arabic simple">
-<li>Усі документи з блоку <code class="docutils literal notranslate"><span class="pre">data.contracts.documents</span></code> перевіряються на предмет їх формату <code class="docutils literal notranslate"><span class="pre">data.awards.documents.format</span></code></li>
+<li>Усі документи з блоку <code class="docutils literal notranslate"><span class="pre">data.contracts.documents</span></code> перевіряються на предмет їх формату <code class="docutils literal notranslate"><span class="pre">data.contracts.documents.format</span></code></li>
 <li>Якщо в блоці <code class="docutils literal notranslate"><span class="pre">data.contracts.documents</span></code> нема жодного документу з форматом <code class="docutils literal notranslate"><span class="pre">application/pkcs7-signature</span></code>, то індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">1</span></code>. Якщо такий документ є, то індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
 </ol>
 <p>Порядок визначення лоту, на який спрацьовує індикатор, наступний:</p>
@@ -172,6 +176,9 @@
   <h4>Попередній розділ</h4>
   <p class="topless"><a href="DASU-3-2.html"
                         title="Попередній розділ">DASU-3-2 Документи визначення переможця не позначені електронним підписом</a></p>
+  <h4>Наступна тема</h4>
+  <p class="topless"><a href="transactional_variables.html"
+                        title="наступний розділ">Перелік транзакційних змінних</a></p>
   <div role="note" aria-label="source link">
     <h3>Ця сторінка</h3>
     <ul class="this-page-menu">
@@ -201,6 +208,9 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="Загальний індекс"
              >індекс</a></li>
+        <li class="right" >
+          <a href="transactional_variables.html" title="Перелік транзакційних змінних"
+             >наступний</a> |</li>
         <li class="right" >
           <a href="DASU-3-2.html" title="DASU-3-2 Документи визначення переможця не позначені електронним підписом"
              >попередній</a> |</li>

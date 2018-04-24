@@ -11,3 +11,6 @@
    :caption: Зміст:
    
    indicators
+   transactional_variables
+   analytical_tables
+   gsw_formula
