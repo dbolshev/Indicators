@@ -28,7 +28,7 @@ version = ''
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
 
-
+source_encoding =  'utf-8-sig'
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
