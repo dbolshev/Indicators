@@ -79,8 +79,6 @@ DASU-5-2 Перевищення гарантії (роботи)
 
   - ``active.tendering``
   - ``active.enquiries``
-  - ``active.pre-qualification``
-  - ``active.pre-qualification.stand-still``
 
 Частота розрахунку
 ==================

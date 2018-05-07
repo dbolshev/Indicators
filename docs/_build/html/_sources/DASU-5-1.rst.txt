@@ -79,8 +79,6 @@ DASU-5-1 Перевищення гарантії (товари та послуг
 
   - ``active.tendering``
   - ``active.enquiries``
-  - ``active.pre-qualification``
-  - ``active.pre-qualification.stand-still``
 
 Частота розрахунку
 ==================
