@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>DASU-10-1 Процедура «Допорогові закупівлі» була обрана із порушенням порогів визначених законом (товари та послуги) &#8212; DASU indicators 0.0.1 documentation</title>
+    <title>DASU-2-1 Закупівля товарів та послуг кваліфікується як відкриті торги (EU), але замовником обрана інша процедура &#8212; DASU indicators 0.0.1 documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script type="text/javascript" src="_static/documentation_options.js"></script>
@@ -15,8 +15,8 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Індекс" href="genindex.html" />
     <link rel="search" title="Пошук" href="search.html" />
-    <link rel="next" title="DASU-10-2 Процедура «Допорогові закупівлі» була обрана із порушенням порогів визначених законом (роботи)" href="DASU-10-2.html" />
-    <link rel="prev" title="DASU-9 Дата укладення та дата публікації договору відрізняються більше ніж на два дні" href="DASU-9.html" /> 
+    <link rel="next" title="DASU-2-2 Закупівля робіт кваліфікується як відкриті торги (EU), але замовником обрана інша процедура" href="DASU-2-2.html" />
+    <link rel="prev" title="DASU-1 Переговорна процедура проведена за відсутності двох неуспішних відкритих процедур" href="DASU-1.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Навігація</h3>
@@ -25,10 +25,10 @@
           <a href="genindex.html" title="Загальний індекс"
              accesskey="I">індекс</a></li>
         <li class="right" >
-          <a href="DASU-10-2.html" title="DASU-10-2 Процедура «Допорогові закупівлі» була обрана із порушенням порогів визначених законом (роботи)"
+          <a href="DASU-2-2.html" title="DASU-2-2 Закупівля робіт кваліфікується як відкриті торги (EU), але замовником обрана інша процедура"
              accesskey="N">наступний</a> |</li>
         <li class="right" >
-          <a href="DASU-9.html" title="DASU-9 Дата укладення та дата публікації договору відрізняються більше ніж на два дні"
+          <a href="DASU-1.html" title="DASU-1 Переговорна процедура проведена за відсутності двох неуспішних відкритих процедур"
              accesskey="P">попередній</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">DASU indicators 0.0.1 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="indicators.html" accesskey="U">Перелік індикаторів</a> &#187;</li> 
@@ -40,15 +40,15 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="dasu-10-1">
-<h1>DASU-10-1 Процедура «Допорогові закупівлі» була обрана із порушенням порогів визначених законом (товари та послуги)<a class="headerlink" href="#dasu-10-1" title="Постійне посилання на цей заголовок">¶</a></h1>
+  <div class="section" id="dasu-2-1-eu">
+<h1>DASU-2-1 Закупівля товарів та послуг кваліфікується як відкриті торги (EU), але замовником обрана інша процедура<a class="headerlink" href="#dasu-2-1-eu" title="Постійне посилання на цей заголовок">¶</a></h1>
 <div class="section" id="id1">
 <h2>Суть індикатора<a class="headerlink" href="#id1" title="Постійне посилання на цей заголовок">¶</a></h2>
-<p>Даний індикатор виявляє ситуації, коли замовником обрано тип процедури «Допорогові закупівлі», але очікувана вартість перевищує встановлені Законом пороги при закупівлі товарів та послуг.</p>
+<p>Даний індикатор виявляє ситуації, коли замовником перевищено поріг, що відповідає процедурі «Вікриті торги з публікацією англійською мовою», але обрано інший тип процедури при закупівлі товарів та послуг.</p>
 </div>
 <div class="section" id="id2">
 <h2>Законодавче обґрунтування індикатора<a class="headerlink" href="#id2" title="Постійне посилання на цей заголовок">¶</a></h2>
-<p>Перевищення порогу при виборі допорогових закупівель є порушенням частини 1 статті 12 Закону України «Про публічні закупівлі» та абзаців 2 і 3 частини 1 статті 2 Закону України «Про публічні закупівлі».</p>
+<p>Перевищення порогу відкритих торгів з публікацією англійською мовою при виборі іншого типу процедури при закупівлі товарів або послуг є порушенням абзаців 1 і 2 частини 4 статті 10 Закону України «Про публічні закупівлі».</p>
 </div>
 <div class="section" id="id3">
 <h2>Підстава для розробки індикатора<a class="headerlink" href="#id3" title="Постійне посилання на цей заголовок">¶</a></h2>
@@ -74,6 +74,7 @@
 <p>Індикатор розраховується для наступних типів процедур:</p>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">belowThreshold</span></code> - <em>допорогові закупівлі</em></li>
+<li><code class="docutils literal notranslate"><span class="pre">aboveThresholdUA</span></code> - <em>відкриті торги</em></li>
 </ul>
 </div>
 <div class="section" id="id8">
@@ -137,23 +138,12 @@
 <li>Перевіряється валюта, в якій вказана очікувана вартість процедури відповідно до поля <code class="docutils literal notranslate"><span class="pre">data.value.currency</span></code></li>
 </ol>
 <blockquote>
-<div><p>1.а) Якщо очікувана вартість указана в гривнях, тобто <code class="docutils literal notranslate"><span class="pre">data.value.currency</span> <span class="pre">=</span> <span class="pre">'UAH'</span></code>, то вона залишається без змін.</p>
-<p>1.б) Якщо очікувана вартість указана не в гривнях, то вона переводиться у гривні відповідно до курсу даної валюти до гривні за допомогою API курсу валют на дату <code class="docutils literal notranslate"><span class="pre">data.tenderPeriod.startDate</span></code></p>
+<div><p>1.а) Якщо очікувана вартість указана в євро, тобто <code class="docutils literal notranslate"><span class="pre">data.value.currency</span> <span class="pre">=</span> <span class="pre">'EUR'</span></code>, то вона залишається без змін.</p>
+<p>1.б) Якщо очікувана вартість указана не в євро, то вона переводиться у євро відповідно до курсу даної валюти до євро за допомогою API курсу валют на дату <code class="docutils literal notranslate"><span class="pre">data.tenderPeriod.startDate</span></code></p>
 </div></blockquote>
 <ol class="arabic simple" start="2">
-<li>Якщо закупівлю проводить загальний замовник (<code class="docutils literal notranslate"><span class="pre">general</span></code>)</li>
+<li>Якщо очікувана вартість процедури <em>в євро</em> перевищує 133000 (133 тисячі), то індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">1</span></code></li>
 </ol>
-<blockquote>
-<div><p>2.а) Якщо очікувана вартість <em>в гривнях</em> перевищує 200000 (двісті тисяч), то індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
-<p>2.б) В інакшому випадку індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
-</div></blockquote>
-<ol class="arabic simple" start="3">
-<li>Якщо закупівлю проводить замовник, що здійснює діяльність в окремих сферах господарювання (<code class="docutils literal notranslate"><span class="pre">special</span></code>)</li>
-</ol>
-<blockquote>
-<div><p>3.а) Якщо очікувана вартість <em>в гривнях</em> перевищує 1000000 (один мільйон), то індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
-<p>3.б) В інакшому випадку індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
-</div></blockquote>
 </div>
 <div class="section" id="id17">
 <h3>Фактори, що впливають на неточність розрахунку<a class="headerlink" href="#id17" title="Постійне посилання на цей заголовок">¶</a></h3>
@@ -173,7 +163,7 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Зміст</a></h3>
   <ul>
-<li><a class="reference internal" href="#">DASU-10-1 Процедура «Допорогові закупівлі» була обрана із порушенням порогів визначених законом (товари та послуги)</a><ul>
+<li><a class="reference internal" href="#">DASU-2-1 Закупівля товарів та послуг кваліфікується як відкриті торги (EU), але замовником обрана інша процедура</a><ul>
 <li><a class="reference internal" href="#id1">Суть індикатора</a></li>
 <li><a class="reference internal" href="#id2">Законодавче обґрунтування індикатора</a></li>
 <li><a class="reference internal" href="#id3">Підстава для розробки індикатора</a></li>
@@ -200,15 +190,15 @@
 </ul>
 
   <h4>Попередній розділ</h4>
-  <p class="topless"><a href="DASU-9.html"
-                        title="Попередній розділ">DASU-9 Дата укладення та дата публікації договору відрізняються більше ніж на два дні</a></p>
+  <p class="topless"><a href="DASU-1.html"
+                        title="Попередній розділ">DASU-1 Переговорна процедура проведена за відсутності двох неуспішних відкритих процедур</a></p>
   <h4>Наступна тема</h4>
-  <p class="topless"><a href="DASU-10-2.html"
-                        title="наступний розділ">DASU-10-2 Процедура «Допорогові закупівлі» була обрана із порушенням порогів визначених законом (роботи)</a></p>
+  <p class="topless"><a href="DASU-2-2.html"
+                        title="наступний розділ">DASU-2-2 Закупівля робіт кваліфікується як відкриті торги (EU), але замовником обрана інша процедура</a></p>
   <div role="note" aria-label="source link">
     <h3>Ця сторінка</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/DASU-10-1.rst.txt"
+      <li><a href="_sources/DASU-2-1.rst.txt"
             rel="nofollow">Відобразити вихідний текст</a></li>
     </ul>
    </div>
@@ -235,10 +225,10 @@
           <a href="genindex.html" title="Загальний індекс"
              >індекс</a></li>
         <li class="right" >
-          <a href="DASU-10-2.html" title="DASU-10-2 Процедура «Допорогові закупівлі» була обрана із порушенням порогів визначених законом (роботи)"
+          <a href="DASU-2-2.html" title="DASU-2-2 Закупівля робіт кваліфікується як відкриті торги (EU), але замовником обрана інша процедура"
              >наступний</a> |</li>
         <li class="right" >
-          <a href="DASU-9.html" title="DASU-9 Дата укладення та дата публікації договору відрізняються більше ніж на два дні"
+          <a href="DASU-1.html" title="DASU-1 Переговорна процедура проведена за відсутності двох неуспішних відкритих процедур"
              >попередній</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">DASU indicators 0.0.1 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="indicators.html" >Перелік індикаторів</a> &#187;</li> 
