@@ -17,6 +17,7 @@
    DASU-6-1
    DASU-6-2
    DASU-6-3
+   DASU-7
    DASU-8-1
    DASU-8-2
    DASU-9
