@@ -15,7 +15,7 @@
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Індекс" href="genindex.html" />
     <link rel="search" title="Пошук" href="search.html" />
-    <link rel="next" title="DASU-3-1 Документи тендера не позначені електронним підписом" href="DASU-3-1.html" />
+    <link rel="next" title="DASU-2-1 Закупівля товарів та послуг кваліфікується як відкриті торги (EU), але замовником обрана інша процедура" href="DASU-2-1.html" />
     <link rel="prev" title="Перелік індикаторів" href="indicators.html" /> 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -25,7 +25,7 @@
           <a href="genindex.html" title="Загальний індекс"
              accesskey="I">індекс</a></li>
         <li class="right" >
-          <a href="DASU-3-1.html" title="DASU-3-1 Документи тендера не позначені електронним підписом"
+          <a href="DASU-2-1.html" title="DASU-2-1 Закупівля товарів та послуг кваліфікується як відкриті торги (EU), але замовником обрана інша процедура"
              accesskey="N">наступний</a> |</li>
         <li class="right" >
           <a href="indicators.html" title="Перелік індикаторів"
@@ -66,7 +66,7 @@
 <ul class="simple">
 <li>API модуля тендеринга електронної системи закупівель</li>
 <li>Аналітична таблиця <a class="reference internal" href="tbl_unsuccessfulAbove.html#tbl-unsuccessfulabove"><span class="std std-ref">tbl_unsuccessfulAbove</span></a></li>
-<li>Транзакційна змінна <a class="reference internal" href="tv_subjectOfProcurement.html#tv-subjectofprocurement"><span class="std std-ref">tv_subjectOfProcurement</span></a></li>
+<li>Транзакційна змінна <a class="reference internal" href="tv_tenderCPV.html#tv-tendercpv"><span class="std std-ref">tv_tenderCPV</span></a></li>
 <li>Транзакційна змінна <a class="reference internal" href="tv_procuringEntity.html#tv-procuringentity"><span class="std std-ref">tv_procuringEntity</span></a></li>
 </ul>
 </div>
@@ -118,7 +118,7 @@
 </ul>
 <p>Для розрахунку індикатора використовуються наступні транзакційні змінні:</p>
 <ul class="simple">
-<li><a class="reference internal" href="tv_subjectOfProcurement.html#tv-subjectofprocurement"><span class="std std-ref">tv_subjectOfProcurement</span></a></li>
+<li><a class="reference internal" href="tv_tenderCPV.html#tv-tendercpv"><span class="std std-ref">tv_tenderCPV</span></a></li>
 <li><a class="reference internal" href="tv_procuringEntity.html#tv-procuringentity"><span class="std std-ref">tv_procuringEntity</span></a></li>
 </ul>
 <p>Для розрахунку індикатора використовуються наступні аналітичні таблиці:</p>
@@ -130,7 +130,7 @@
 <h3>Формула розрахунку<a class="headerlink" href="#id16" title="Постійне посилання на цей заголовок">¶</a></h3>
 <p>Індикатор розраховується наступним чином:</p>
 <ol class="arabic simple">
-<li>Для даного замовника <a class="reference internal" href="tv_procuringEntity.html#tv-procuringentity"><span class="std std-ref">tv_procuringEntity</span></a> та предмета закупівлі <a class="reference internal" href="tv_subjectOfProcurement.html#tv-subjectofprocurement"><span class="std std-ref">tv_subjectOfProcurement</span></a> у аналітичній таблиці <a class="reference internal" href="tbl_unsuccessfulAbove.html#tbl-unsuccessfulabove"><span class="std std-ref">tbl_unsuccessfulAbove</span></a> шукається відповідне число неуспішних відкритих процедур від поточної дати до дати попередньої переговорної процедури цього замовника по цьому предмету закупівлі (або від поточної дати до дати, що передує поточній 1 рік, якщо такої переговорної процедури немає).</li>
+<li>Для даного замовника <a class="reference internal" href="tv_procuringEntity.html#tv-procuringentity"><span class="std std-ref">tv_procuringEntity</span></a> та предмета закупівлі <a class="reference internal" href="tv_tenderCPV.html#tv-tendercpv"><span class="std std-ref">tv_tenderCPV</span></a> у аналітичній таблиці <a class="reference internal" href="tbl_unsuccessfulAbove.html#tbl-unsuccessfulabove"><span class="std std-ref">tbl_unsuccessfulAbove</span></a> шукається відповідне число неуспішних відкритих процедур від поточної дати до дати попередньої переговорної процедури цього замовника по цьому предмету закупівлі (або від поточної дати до дати, що передує поточній 1 рік, якщо такої переговорної процедури немає).</li>
 <li>Якщо знайдене у аналітичній таблиці число процедур більше або дорівнює 2, то індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">0</span></code>.</li>
 <li>Якщо знайдене у аналітичній таблиці число процедур менше 2 або запис для цього замовника по цоьму предмету закупівлі взагалі не знайдений, то індикатор приймає значення <code class="docutils literal notranslate"><span class="pre">1</span></code>.</li>
 </ol>
@@ -185,8 +185,8 @@
   <p class="topless"><a href="indicators.html"
                         title="Попередній розділ">Перелік індикаторів</a></p>
   <h4>Наступна тема</h4>
-  <p class="topless"><a href="DASU-3-1.html"
-                        title="наступний розділ">DASU-3-1 Документи тендера не позначені електронним підписом</a></p>
+  <p class="topless"><a href="DASU-2-1.html"
+                        title="наступний розділ">DASU-2-1 Закупівля товарів та послуг кваліфікується як відкриті торги (EU), але замовником обрана інша процедура</a></p>
   <div role="note" aria-label="source link">
     <h3>Ця сторінка</h3>
     <ul class="this-page-menu">
@@ -217,7 +217,7 @@
           <a href="genindex.html" title="Загальний індекс"
              >індекс</a></li>
         <li class="right" >
-          <a href="DASU-3-1.html" title="DASU-3-1 Документи тендера не позначені електронним підписом"
+          <a href="DASU-2-1.html" title="DASU-2-1 Закупівля товарів та послуг кваліфікується як відкриті торги (EU), але замовником обрана інша процедура"
              >наступний</a> |</li>
         <li class="right" >
           <a href="indicators.html" title="Перелік індикаторів"

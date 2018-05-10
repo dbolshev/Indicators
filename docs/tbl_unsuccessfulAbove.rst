@@ -44,7 +44,7 @@ tbl_unsuccessfulAbove
 
 - API модуля тендеринга електронної системи закупівель
 
-- Транзакційна змінна :ref:`tv_subjectOfProcurement`
+- Транзакційна змінна :ref:`tv_tenderCPV`
 
 - Транзакційна змінна :ref:`tv_procuringEntity`
 
@@ -65,14 +65,14 @@ tbl_unsuccessfulAbove
 
 Для розрахунку використовуються наступні транзакційні змінні:
 
-- :ref:`tv_subjectOfProcurement`
+- :ref:`tv_tenderCPV`
 
 - :ref:`tv_procuringEntity`
 
 Формула розрахунку
 ==================
 
-Для кожного замовника :ref:`tv_procuringEntity` та предмету закупівлі :ref:`tv_subjectOfProcurement` виконуються наступні дії:
+Для кожного замовника :ref:`tv_procuringEntity` та предмету закупівлі :ref:`tv_tenderCPV` виконуються наступні дії:
 
 1. Визначається дата, з якої починається підрахунок неуспішних відкритих процедур. Порядок визначення цієї дати наступний:
 
