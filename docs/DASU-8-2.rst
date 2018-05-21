@@ -92,7 +92,6 @@ DASU-8-2 Договір опубліковано більше ніж через 
 - ``data.contracts``
 - ``data.contracts.awardID``
 - ``data.contracts.status``
-- ``data.contracts.date``
 
 Формула розрахунку
 ==================
