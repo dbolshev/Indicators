@@ -99,8 +99,6 @@ DASU-2-2 Закупівля робіт понад "європейські пор
 - ``data.value.amount``
 - ``data.value.currency``
 - ``data.tenderPeriod.startDate``
-- ``data.contracts.dateSigned``
-- ``data.contracts.date``
 
 Для розрахунку індикатора використовуються наступні транзакційні змінні:
 
