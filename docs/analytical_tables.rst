@@ -6,3 +6,4 @@
 
    tbl_unsuccessfulAbove
    tbl_generalSpecial
+   tbl_procuredCPV
