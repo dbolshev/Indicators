@@ -8,3 +8,4 @@
    tbl_generalSpecial
    tbl_procuredCPV
    tbl_suppliersSingleBuyer
+   tbl_biddersForBuyer
