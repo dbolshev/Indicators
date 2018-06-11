@@ -9,3 +9,4 @@
    tbl_procuredCPV
    tbl_suppliersSingleBuyer
    tbl_biddersForBuyer
+   tbl_winnedLotsWithDisquals
