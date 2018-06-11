@@ -35,7 +35,7 @@
 
 - API модуля тендеринга електронної системи закупівель
 
-- аналітична таблиця   для всіх учасників, що беруть участь у процедурах зі статусами ``belowThreshold``, ``aboveThresholdUA`` та ``aboveThresholdEU``) на дату розрахунку. В таблицю заносяться усі ``data.ProcuringEntity.identifier.id`` Замовників, у яких брав участь Учасник (``data.bids.status = 'active'``).
+- аналітична таблиця   для всіх учасників, що беруть участь у процедурах, у яких ``data.procurementMethodType`` дорівнює ``belowThreshold``, ``aboveThresholdUA`` або ``aboveThresholdEU`` та ``data.status = 'complete'`` на дату розрахунку. В таблицю заносяться усі ``data.ProcuringEntity.identifier.id`` Замовників, у яких брав участь Учасник (``data.bids.id`` для яких ``data.bids.status = 'active'``).
 
 Типи процедур
 =============
