@@ -35,7 +35,7 @@
 
 - API модуля тендеринга електронної системи закупівель
 
-- аналітична таблиця   для всіх учасників, що беруть участь у процедурах, у яких ``data.procurementMethodType`` дорівнює ``belowThreshold``, ``aboveThresholdUA`` або ``aboveThresholdEU`` та ``data.status = 'complete'`` на дату розрахунку. В таблицю заносяться усі ``data.ProcuringEntity.identifier.id`` Замовників, у яких брав участь Учасник (``data.bids.id`` для яких ``data.bids.status = 'active'``).
+- аналітична таблиця   для всіх учасників, що беруть участь у процедурах, у яких ``data.procurementMethodType`` дорівнює ``belowThreshold``, ``aboveThresholdUA`` або ``aboveThresholdEU`` та ``data.status = 'complete'`` на дату розрахунку. В таблицю заносяться усі ``data.ProcuringEntity.identifier.id`` Замовників, у яких брав участь Учасник (``data.bids.tenderers.identifier.id`` для яких ``data.bids.status = 'active'``).
 
 Типи процедур
 =============
@@ -89,7 +89,7 @@
 
 Для розрахунку індикатора використовуються наступні поля з API модуля тендеринга:
 
-- ``data.bids.id``
+- ``data.bids.tenderers.identifier.id``
 - ``data.bids.status``
 - ``data.ProcuringEntity.identifier.id``
 
@@ -100,7 +100,7 @@
 Формула розрахунку
 ==================
 
-Для кожного Учасника, що має свій ``data.bids.id``, та для якого ``data.bids.status = 'active'`` перевіряємо список Замовників з таблиці  . Якщо він єдиний та його id дорівнює ``data.ProcuringEntity.identifier.id`` процедури, то індикатор приймає значення "``1``".
+Для кожного Учасника, що має свій ``data.bids.tenderers.identifier.id``, та для якого ``data.bids.status = 'active'`` перевіряємо список Замовників з таблиці  . Якщо він єдиний та його id дорівнює ``data.ProcuringEntity.identifier.id`` процедури, то індикатор приймає значення "``1``".
 
 Фактори, що впливають на неточність розрахунку
 ==============================================
