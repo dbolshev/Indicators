@@ -64,7 +64,7 @@ tbl_countOfAwardsAndDisquals
 
 - ``data.awards.status``
 
-- ``data.status``
+- ``data.awards.lotID``
 
 Формула розрахунку
 ==================
