@@ -1,8 +1,8 @@
-﻿.. _tbl_suppliersSinglуBidder:
+﻿.. _tbl_biddersForBuyer:
 
-=========================
-tbl_suppliersSingleBidder
-=========================
+===================
+tbl_biddersForBuyer
+===================
 
 ************************
 Суть аналітичної таблиці
