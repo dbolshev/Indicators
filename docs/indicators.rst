@@ -36,3 +36,4 @@
    Risk-DASU-9(Т103)
    RISK-DASU-10(Т49)
    RISK-DASU-11(Т67)
+   RISK-DASU-12(T68)
