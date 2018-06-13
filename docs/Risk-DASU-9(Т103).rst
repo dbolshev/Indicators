@@ -91,11 +91,19 @@ Risk-DASU-9(Т103). Усі Учасники торгів були дисквал
 
 - ``data.awards.status``
 
+- ``data.awards.suppliers.identifier.scheme``
+
+- ``data.awards.suppliers.identifier.id``
+
 - ``data.awards.lotID``
 
 - ``data.bids.status``
 
 - ``data.bids.lotValues.relatedLot``
+
+- ``data.bids.tenderers.identifier.scheme``
+
+- ``data.bids.tenderers.identifier.id``
 
 
 Формула розрахунку
