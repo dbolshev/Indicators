@@ -101,7 +101,7 @@ tbl_systematicBidder
 
 4. Проводимо групування по всім cpv4, рахуючи всі лоти (Gropby-cpv4 Count-lots). Маємо таблицю, де для кожного cpv4 порахована кількість вдалих продажів. Нехай таблиця буде "Усі продажі за cpv4".
 
-5. Вибираємо з "Процедур" усі тендерні пропозиції, які мають ``data.bids.status = 'active'``. Для кожної пропозиції знаходимо її автора (конкатенація ``bids.tenderers.identifier.scheme`` та ``bids.tenderers.identifier.id``).
+5. Вибираємо з "Процедур" усі тендерні пропозиції, які мають ``data.bids.status = 'active'``. Для кожної пропозиції знаходимо її автора (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``).
    Для кожної пропозиції знаходимо її cpv з блоку ``data.items.classification.id"``, на який посилається ``data.bids.lotValues.relatedLot = data.items.relatedLot``.
    Знаходимо cpv4 для кожного cpv - беремо перші 4 цифри від cpv та додаємо до них "0000". Проводимо групування по всім cpv4,``bids.tenderers.identifier.scheme`` та ``bids.tenderers.identifier.id`` рахуючи всі лоти (Gropby Count-lots).
    Маємо кількість лотів по cpv4, у яких брав участь учасник. Нехай така таблиця буде називатися "Участь учасника у процедурах по cpv4"
