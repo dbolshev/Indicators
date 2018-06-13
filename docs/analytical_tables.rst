@@ -15,4 +15,4 @@
    tbl_nearThreshold
    tbl_belowThresholdForCPV4
    tbl_technicalBidder
-   tbl_oneBidderForCPV4.rst
+   tbl_oneBidderForCPV4
