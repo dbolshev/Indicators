@@ -85,23 +85,25 @@ RISK-DASU-17(T9). Один Учасник виграє усі процедури
 
 Для розрахунку індикатора використовуються наступні поля з API модуля тендеринга:
 
-- ``data.bids.tenderers.identifier.scheme``
-- ``data.bids.tenderers.identifier.id``
-- ``data.bids.status``
+- ``data.awards.suppliers.identifier.scheme``
+- ``data.awards.suppliers.identifier.id``
+- ``data.awards.status``
 - ``data.procuringEntity.identifier.scheme``
 - ``data.procuringEntity.identifier.id``
 - ``data.items.classification.id``
+- ``data.awards.lotID``
+- ``data.items.relatedLot``
 
 Формула розрахунку
 ==================
 
 1. Для процедури визначаємо її замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id``).
-   Також для процедури визначаємо усіх її учасників (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) в тих об'єктах, де ``data.bids.status = 'active'``.
+   Також для процедури визначаємо усіх її переможців (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) в тих об'єктах, де ``data.awards.status = 'active'``.
    
-2. Для кожного учасника знаходимо ``cpv`` продукції, що він хоче поставляти, тобто ``data.items.classification.id``, на які посилаються ``data.bids.lotValues.relatedLot = data.items.relatedLot``.
+2. Для кожного переможця знаходимо ``cpv`` продукції, що він хоче поставляти, тобто ``data.items.classification.id``, на які посилаються ``data.awards.lotID = data.items.relatedLot``.
    Для кожного ``cpv`` знаходимо ``cpv4``, тобто беремо перші 4 цифри з ``cpv`` та додаємо "0000".
 
-2. Для кожної пари Замовник-cpv4 шукаємо рядки у в таблиці tbl_oneBidderForCPV4. Якщо рядок присутній і він єдиний, та поле "Постачальник" співпадає з учасником з пункту 2, то індикатор приймає значення ``1``.
+3. Для кожної пари Замовник-cpv4 шукаємо рядки у в таблиці tbl_oneBidderForCPV4. Якщо рядок присутній і він єдиний, та поле "Постачальник" співпадає з учасником з пункту 2, то індикатор приймає значення ``1``.
 
 Фактори, що впливають на неточність розрахунку
 ==============================================
