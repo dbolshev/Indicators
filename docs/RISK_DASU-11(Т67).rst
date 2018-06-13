@@ -31,6 +31,10 @@ RISK_DASU-11(Т67). Закупівля близька до порогу визн
 
 - Аналітична таблиця tbl_nearThreshold
 
+- `API курсу валют Національного Банку України <https://bank.gov.ua/control/uk/publish/article?art_id=38441973#exchange>`_
+
+- Транзакційна змінна :ref:`tv_subjectOfProcurement`
+
 
 Типи процедур
 =============
