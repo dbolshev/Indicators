@@ -12,3 +12,4 @@
    tbl_winnedLotsWithDisquals
    tbl_biddersForBuyer
    tbl_systematicBidder
+   tbl_nearThreshold
