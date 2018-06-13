@@ -14,3 +14,4 @@
    tbl_systematicBidder
    tbl_nearThreshold
    tbl_belowThresholdForCPV4
+   tbl_technicalBidder
