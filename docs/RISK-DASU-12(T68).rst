@@ -31,6 +31,10 @@ RISK-DASU-12(T68) Закупівля близька до порогу визна
 
 - Аналітична таблиця tbl_nearThreshold
 
+- `API курсу валют Національного Банку України <https://bank.gov.ua/control/uk/publish/article?art_id=38441973#exchange>`_
+
+- Транзакційна змінна :ref:`tv_subjectOfProcurement`
+
 Типи процедур
 =============
 
@@ -90,7 +94,7 @@ RISK-DASU-12(T68) Закупівля близька до порогу визна
 - ``data.value``
 - ``data.value.amount``
 - ``data.value.currency``
-- ``data.tenderPeriod.startDate``
+
 
 Для розрахунку індикатора використовуються наступні транзакційні змінні:
 
