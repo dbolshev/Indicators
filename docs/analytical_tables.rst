@@ -17,3 +17,4 @@
    tbl_technicalBidder
    tbl_oneBidderForCPV4
    tbl_bidderAlwaysLooses
+   tbl_meanStdOfBuyerByCPV4
