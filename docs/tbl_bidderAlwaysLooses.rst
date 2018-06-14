@@ -70,8 +70,8 @@ tbl_bidderAlwaysLooses
 3. Для кожної процедури визначаємо її учасників (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) з об'єктів ``data.bids``, що мають ``data.bids.status = 'active'``.
    Також для процедури визначаємо усіх її переможців (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) в тих об'єктах, де ``data.awards.status = 'active'``.
    
-4. Групуємо учасників по їх ідентифікатору (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``), рахуючи кількість лотів або однолотових процедур, у яких він брав участь.
-беремо до уваги тільки тих учасників, що мають від 3-х участей.
+4. Групуємо учасників по їх ідентифікатору (конкатенація ``data.bids.tenderers.identifier.scheme`` та                  ``data.bids.tenderers.identifier.id``), рахуючи кількість лотів або однолотових процедур, у яких він брав участь.
+   беремо до уваги тільки тих учасників, що мають від 3-х участей.
 
 5. Групуємо переможців по їх ідентифікатору (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), рахуючи кількість лотів або однолотових процедур, у яких він переміг.
    
