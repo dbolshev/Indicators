@@ -16,3 +16,4 @@
    tbl_belowThresholdForCPV4
    tbl_technicalBidder
    tbl_oneBidderForCPV4
+   tbl_bidderAlwaysLooses
