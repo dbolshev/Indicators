@@ -18,3 +18,4 @@
    tbl_oneBidderForCPV4
    tbl_bidderAlwaysLooses
    tbl_meanStdOfBuyerByCPV4
+   tbl_monopolyCPV4
