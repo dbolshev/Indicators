@@ -102,7 +102,7 @@ RISK-DASU-21(T83). Нетипово велика або мала сума зак
 Формула розрахунку
 ==================
 
-1. Визначаємо замовника процедури - конкатенація ``data.procuringEntity.identifier.scheme`` та `data.procuringEntity.identifier.id``.
+1. Визначаємо замовника процедури - конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id``.
    Визначаємо очікувану вартість процедури ``data.value.amount``.
 
 2. Знаходимо ``cpv`` процедури. Якщо процедура однолотова, то її ``cpv = data.items.classification.id``.
