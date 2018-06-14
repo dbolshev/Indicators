@@ -71,9 +71,9 @@ tbl_bidderAlwaysLooses
    Також для процедури визначаємо усіх її переможців (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) в тих об'єктах, де ``data.awards.status = 'active'``.
    
 4. Групуємо учасників по їх ідентифікатору (конкатенація ``data.bids.tenderers.identifier.scheme`` та                  ``data.bids.tenderers.identifier.id``), рахуючи кількість лотів або однолотових процедур, у яких він брав участь.
-   беремо до уваги тільки тих учасників, що мають від 3-х участей.
+   Беремо до уваги тільки тих учасників, що мають від 3-х участей.
 
-5. Групуємо переможців по їх ідентифікатору (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), рахуючи кількість лотів або однолотових процедур, у яких він переміг.
+5. Групуємо переможців по їх ідентифікатору (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), рахуючи кількість лотів або однолотових процедур, у яких він переміг.
    
-6. Для кожного учасника порівнюємо його кількість перемог (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id`` дорівнює конкатенації ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) та участей. Якщо кількість участей складає 20% або менше, заносимо учасника в таблицю.
+6. Для кожного учасника порівнюємо його кількість перемог (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id`` дорівнює конкатенації ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) та участей. Якщо кількість участей складає 20% або менше, заносимо учасника в таблицю.
  
