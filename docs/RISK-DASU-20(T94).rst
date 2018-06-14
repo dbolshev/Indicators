@@ -67,7 +67,7 @@ RISK-DASU-20(T94). Дискваліфікація переможця у євро
 
 - Індикатор розраховується для наступних статусів процедур:
 
-  - ``data.status = 'active.qualification'``
+  - ``active.qualification``
   - ``active.awarded``
 
 Частота розрахунку
