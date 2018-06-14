@@ -75,5 +75,5 @@ tbl_bidderAlwaysLooses
 
 5. Групуємо переможців по їх ідентифікатору (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), рахуючи кількість лотів або однолотових процедур, у яких він переміг.
    
-6. Для кожного учасника порівнюємо його кількість перемог (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id`` дорівнює конкатенації ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) та участей. Якщо кількість участей складає 10% або менше, заносимо учасника в таблицю.
+6. Для кожного учасника порівнюємо його кількість перемог (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id`` дорівнює конкатенації ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) та участей. Якщо кількість участей складає 20% або менше, заносимо учасника в таблицю.
  
