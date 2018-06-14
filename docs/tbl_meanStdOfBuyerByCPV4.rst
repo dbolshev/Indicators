@@ -75,7 +75,7 @@ tbl_meanStdOfBuyerByCPV4
 
 1. Перед розрахунком аналітична таблиця очищується.
 
-2. До уваги беруться усі процедури, у яких ``data.procurementMethodType`` мають бути ``aboveThresholdUA``, ``aboveThresholdEU``, ``reporting``, ``negotiation``, ``negotiation.quick``. Процедури повинні бути завершені, тобто ``data.status = 'complete'``
+2. До уваги беруться усі процедури, у яких ``data.procurementMethodType`` мають бути ``belowThreshold``, ``aboveThresholdUA``, ``aboveThresholdEU``, ``reporting``, ``negotiation``, ``negotiation.quick``. Процедури повинні бути завершені, тобто ``data.status = 'complete'``
 
 3. Для кожної процедури визначаємо її Замовника (конкатенація ``data.procuringEntity.identifier.id`` та ``data.procuringEntity.identifier.scheme``).
 
