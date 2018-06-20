@@ -104,7 +104,7 @@ tbl_nearThresholdOneSupplier
 
 4. До уваги беремо процедури, що оголошені у поточному році.
 
-5. Визначаємо переможця процедури (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``).
+5. Визначаємо переможця процедури (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) з об'єктів, де ``data.awards.status = 'active'``.
 
 6. Перевіряється валюта, в якій вказана очікувана вартість процедури відповідно до поля ``data.value.currency``
 
