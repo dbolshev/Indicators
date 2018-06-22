@@ -110,7 +110,7 @@ DASU-8-1 Порушення термінів укладення договору
 
 1. На цей лот через ланцюг ``data.contracts.awardID``-``data.awards.lotID`` поислається об'єкт ``data.contracts``, у якого ``data.contracts.status = 'active'``
 
-2. Дата ``data.awards.date`` з об'єкту ``data.awards.``, що посилається на даний лот через ``data.awards.lotID``, та дата ``data.contracts.dateSigned`` з об'єкту ``data.contracts``, що має ``data.contracts.status = 'active'`` та посилається на цей лот через ланцюг ``data.contracts.awardID``-``data.awards.lotID``, відрізняються менше ніж на 10 днів. Для розрахунку беремо лише дати без часу. Не переводимо часові пояси.
+2. Дата ``data.awards.date`` з об'єкту ``data.awards.``, що посилається на даний лот через ``data.awards.lotID``, та найпізніша дата з ``data.contracts.documents.dateModified`` з об'єкту ``data.contracts``, що має ``data.contracts.status = 'active'`` та посилається на цей лот через ланцюг ``data.contracts.awardID``-``data.awards.lotID``, відрізняються менше ніж на 10 днів. Для розрахунку беремо лише дати без часу. Не переводимо часові пояси.
 
 Примітка: як було надано пояснення розрахунок днів здійснювати наступного дня з дати оприлюднення повідомлення про намір укласти договір про закупівлю.
 
