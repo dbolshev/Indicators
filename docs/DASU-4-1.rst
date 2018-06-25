@@ -103,9 +103,9 @@ DASU-4-1 Перевищення строку розгляду тендерної
 
 1. На цей лот через ``data.awards.lotID`` посилається об'єкт з ``data.awards``, де ``data.awards.status = 'pending'``.
 
-2. Якщо в секції ``data.awards``, де ``data.awards.status = 'pending'``, є документ, у якого ``data.documents.format != 'application/pkcs7-signature'``  та ``data.awards.documents.author != 'bots'``, то індикатор приймає значення '0'.
-
 2. Від поточної дати до дати ``data.awards.date`` більше 5 *робочих* днів.
+
+3. Якщо в секції ``data.awards``, де ``data.awards.status = 'pending'``, є документ, у якого ``data.documents.format != 'application/pkcs7-signature'``  та ``data.awards.documents.author != 'bots'``, то індикатор приймає значення '0'.
 
 Фактори, що впливають на неточність розрахунку
 ==============================================
