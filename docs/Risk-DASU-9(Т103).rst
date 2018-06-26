@@ -110,7 +110,7 @@ Risk-DASU-9(Т103). Усі Учасники торгів були дисквал
 
 1. Для кожного лота (``data.lots.id``) перевіряється наявність преможця - наявність в процедурі ``data.id`` об'єкта ``data.awards``, де  ``data.awards.status = 'active'``, що посилається на лот по ``data.awards.lotID = data.lots.id``. Якщо такий об'єкт є, то маємо значення "Переможець" рівним "``1``", інакше - "``0``".
 
-2. Для кожного лота (``data.lots.id``) перевіряється кількість дискваліфікацій - наявність в процедурі ``data.id`` унікальних об'єктів ``data.awards`` (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), де  ``data.awards.status = 'unsuccessful'``, що посилаються на лот по ``data.awards.lotID = data.lots.id``. Кількість таких об'єктів заноситься у поле "Дискваліфікації".
+2. Для кожного лота (``data.lots.id``) перевіряється кількість дискваліфікацій - наявність в процедурі ``data.id`` унікальних об'єктів ``data.awards`` (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), де  ``data.awards.status = 'unsuccessful'``, що посилаються на лот по ``data.awards.lotID = data.lots.id``. Кількість таких об'єктів заноситься у поле "Дискваліфікації". Якщо таких об'єктів більше за 2, то переходимо на наступний крок.
 
 3. Для кожного лота (``data.lots.id``) перевіряється кількість учасників - в процедурі ``data.id`` кількість унікальних об'єктів ``data.bids`` (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``), де  ``data.bids.status = 'active'``, що посилаються на лот по ``data.bids.lotValues.relatedLot = data.lots.id``. Кількість таких об'єктів заноситься у поле "Учасники".
 
