@@ -71,5 +71,5 @@ tbl_dasu32
 
 3. Усі документи з блоку ``data.awards.documents``, де ``data.awards.status = 'active'``, перевіряються на предмет їх формату ``data.awards.documents.format``
 
-4. Якщо в блоці ``data.awards.documents`` нема жодного документу з форматом ``application/pkcs7-signature``, то ідентифікатор процедури ``data.id`` та її ``data.date`` додаэться як новий рядок у таблицю. 
+4. Якщо в блоці ``data.awards.documents`` нема жодного документу з форматом ``application/pkcs7-signature``, то ідентифікатор процедури ``data.id`` та її ``data.date`` додаються як новий рядок у таблицю. 
 
