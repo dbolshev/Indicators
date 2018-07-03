@@ -137,13 +137,13 @@ RISK-DASU-12-1(T68) Повторювана закупівля у одного п
 
 3. Якщо закупівлю проводить загальний замовник (``general``)
 
-  3.а) Якщо очікувана вартість *в гривнях* перевищує 1350000 (один мільйон триста п'ятдесят тисяч) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), то індикатор приймає значення ``1``
+  3.а) Якщо очікувана вартість *в гривнях* перевищує 1350000 (один мільйон триста п'ятдесят тисяч) і менше 1500000 (один мільйон п'тьсот тисяч) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), то індикатор приймає значення ``1``
 
   23.б) В інакшому випадку індикатор приймає значення ``0``
 
 4. Якщо закупівлю проводить замовник, що здійснює діяльність в окремих сферах господарювання (``special``)
 
-  4.а) Якщо очікувана вартість *в гривнях* перевищує 4500000 (чотири мільйона п'ятьсот тисяч) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), то індикатор приймає значення ``1``
+  4.а) Якщо очікувана вартість *в гривнях* перевищує 4500000 (чотири мільйона п'ятьсот тисяч) і менше 5000000 (п'ять мільйонів) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), то індикатор приймає значення ``1``
 
   4.б) В інакшому випадку індикатор приймає значення ``0``
 
