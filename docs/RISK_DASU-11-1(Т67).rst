@@ -133,12 +133,12 @@ RISK_DASU-11-1(Т67). Повторна закупівля у одного Пос
 2.б) Якщо очікувана вартість указана не в гривнях, то вона переводиться у гривні відповідно до курсу даної валюти до гривні за допомогою API курсу валют на дату data.tenderPeriod.startDate
 
 3. Якщо закупівлю проводить загальний замовник (general)
-3.а) Якщо очікувана вартість в гривнях перевищує 190000 (сто дев'яносто тисяч) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і  конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) то індикатор приймає значення "1".
+3.а) Якщо очікувана вартість в гривнях перевищує 190000 (сто дев'яносто тисяч) і менше 200000 (двісті тисяч) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і  конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) то індикатор приймає значення "1".
 
 3.б) В інакшому випадку індикатор приймає значення 0
 
 4. Якщо закупівлю проводить замовник, що здійснює діяльність в окремих сферах господарювання (special)
-4.а) Якщо очікувана вартість в гривнях перевищує 950000 (дев'ятьсот п'ятдесят тисяч) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і  конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), то індикатор приймає значення "1".
+4.а) Якщо очікувана вартість в гривнях перевищує 950000 (дев'ятьсот п'ятдесят тисяч) і менше 1000000 (один мільйон) та в аналітичній таблиці є запис для поточного замовника (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і  конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``), то індикатор приймає значення "1".
 
 4.б) В інакшому випадку індикатор приймає значення 0
 
