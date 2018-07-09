@@ -67,7 +67,7 @@ DASU-4-2 Перевищення строку розгляду тендерної
 Подія, що вмикає розрахунок індикатора
 --------------------------------------
 
-Подія, що вмикає розрахунок індикатора - в секції ``data.awards``, де ``data.awards.status = 'pending'``, з'являється документ, у якого ``data.documents.format != 'application/pkcs7-signature'``  та ``data.awards.documents.author != 'bots'``.
+Подія, що вмикає розрахунок індикатора - в секції ``data.awards``, де ``data.awards.status = 'pending'``, з'являється документ, у якого ``data.awards.documents.format != 'application/pkcs7-signature'``  та ``data.awards.documents.author != 'bots'``.
 
 Подія, що вимикає розрахунок індикатора
 ---------------------------------------
