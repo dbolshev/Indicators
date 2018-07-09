@@ -78,9 +78,9 @@ RISK_DASU-11(Т67). Закупівля близька до порогу визн
 
 - Індикатор розраховується для наступних статусів процедур:
    
-  - ``active.tendering`` - для процедур типу ``belowThreshold``
+  - ``active.tendering``
   
-  - ``active.enquiries`` - для процедур типу ``belowThreshold``
+  - ``active.enquiries``
 
 
 
