@@ -80,9 +80,12 @@ RISK_DASU-11-1(Т67). Повторна закупівля у одного Пос
 
 - Індикатор розраховується для наступних статусів процедур:
    
-  - ``active.tendering``
+  - ``active.tendering`` - для процедур типу ``belowThreshold``
   
-  - ``active.enquiries``
+  - ``active.enquiries`` - для процедур типу ``belowThreshold``
+
+  - ``complete``  -  для процедур типу ``reporting``
+
 
 Частота розрахунку
 ==================
