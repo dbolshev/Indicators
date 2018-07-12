@@ -104,23 +104,25 @@ tbl_nearThresholdOneSupplier
 
 4. До уваги беремо процедури, що оголошені у поточному році.
 
-5. Визначаємо переможця процедури (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) з об'єктів, де ``data.awards.status = 'active'``.
+5. Для ``data.procurementMethodType = 'reporting'`` ``data.date`` має бути ранішою на 3 дні від дати розрахунку.
 
-6. Перевіряється валюта, в якій вказана очікувана вартість процедури відповідно до поля ``data.value.currency``
+6. Визначаємо переможця процедури (конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id``) з об'єктів, де ``data.awards.status = 'active'``.
 
-  6.а) Якщо очікувана вартість указана в гривнях, тобто ``data.value.currency = 'UAH'``, то вона залишається без змін.
+7. Перевіряється валюта, в якій вказана очікувана вартість процедури відповідно до поля ``data.value.currency``
 
-  6.б) Якщо очікувана вартість указана не в гривнях, то вона переводиться у гривні відповідно до курсу даної валюти до гривні за допомогою API курсу валют на "Дату оголошення".
+  7.а) Якщо очікувана вартість указана в гривнях, тобто ``data.value.currency = 'UAH'``, то вона залишається без змін.
 
-7. Якщо закупівлю проводить загальний замовник (general)
+  7.б) Якщо очікувана вартість указана не в гривнях, то вона переводиться у гривні відповідно до курсу даної валюти до гривні за допомогою API курсу валют на "Дату оголошення".
 
-  7.а) Якщо очікувана вартість в гривнях перевищує 190000 (сто дев'яносто тисяч) і менше 200000 (двісті тисяч), та проводиться закупка *товарів* чи *послуг*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
+8. Якщо закупівлю проводить загальний замовник (general)
+
+  8.а) Якщо очікувана вартість в гривнях перевищує 190000 (сто дев'яносто тисяч) і менше 200000 (двісті тисяч), та проводиться закупка *товарів* чи *послуг*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
   
-  7.б) Якщо очікувана вартість *в гривнях* перевищує 1350000 (один мільйон триста п'ятдесят тисяч) і менше 1500000 (один мільйон п'ятьсот тисяч), та проводиться закупка *робіт*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
+  8.б) Якщо очікувана вартість *в гривнях* перевищує 1350000 (один мільйон триста п'ятдесят тисяч) і менше 1500000 (один мільйон п'ятьсот тисяч), та проводиться закупка *робіт*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
   
-8. Якщо закупівлю проводить замовник, що здійснює діяльність в окремих сферах господарювання (``special``)
+9. Якщо закупівлю проводить замовник, що здійснює діяльність в окремих сферах господарювання (``special``)
 
-  8.а) Якщо очікувана вартість в гривнях перевищує 950000 (дев'ятьсот п'ятдесят тисяч) і менше 1000000 (один мільйон), та проводиться закупка *товарів* чи *послуг*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
+  9.а) Якщо очікувана вартість в гривнях перевищує 950000 (дев'ятьсот п'ятдесят тисяч) і менше 1000000 (один мільйон), та проводиться закупка *товарів* чи *послуг*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
   
-  8.б) Якщо очікувана вартість *в гривнях* перевищує 4500000 (чотири мільйона п'ятьсот тисяч) і менше 5000000 (п'ять мільйонів), та проводиться закупка *робіт*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
+  9.б) Якщо очікувана вартість *в гривнях* перевищує 4500000 (чотири мільйона п'ятьсот тисяч) і менше 5000000 (п'ять мільйонів), та проводиться закупка *робіт*, то  конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id`` і конкатенація ``data.awards.suppliers.identifier.scheme`` та ``data.awards.suppliers.identifier.id`` заноситься в таблицю.
   
