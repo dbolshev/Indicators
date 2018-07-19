@@ -97,6 +97,8 @@ RISK-DASU-12-2(T68) Повторювана закупівля коли замо�
 - ``data.value``
 - ``data.value.amount``
 - ``data.value.currency``
+- ``data.procuringEntity.identifier.scheme``
+- ``data.procuringEntity.identifier.id``
 
 
 Для розрахунку індикатора використовуються наступні транзакційні змінні:
