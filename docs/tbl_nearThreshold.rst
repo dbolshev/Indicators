@@ -58,15 +58,9 @@ tbl_nearThreshold
 
 Для розрахунку використовуються наступні поля з API модуля тендеринга:
 
-- ``data.procuringEntity.identifier.id``
-
 - ``data.procurementMethodType``
 
 - ``data.status``
-
-- ``data.tenderID``
-
-- ``data.value``
 
 - ``data.value.amount``
 
