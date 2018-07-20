@@ -26,19 +26,19 @@
    DASU1-13_3
    DASU2-1
    DASU2-2
-   DASU2-2_1
    DASU2-2_2
    DASU2-3
    DASU2-4
    DASU2-5
+   DASU2-5_1
+   DASU2-5_2
+   DASU2-5_3
    DASU2-6
    DASU2-6_1
    DASU2-6_2
    DASU2-6_3
-   DASU2-7
-   DASU2-7_1
-   DASU2-7_2
    DASU2-8
+   DASU2-8_1
    DASU2-9
    DASU2-10
    DASU2-11
