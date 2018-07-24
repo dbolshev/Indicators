@@ -78,9 +78,9 @@
 
 - Індикатор розраховується для наступних статусів процедур:
    
-  - ``active.tendering`` 
+  - ``active.qualification`` 
   
-  - ``active.enquiries``
+  - ``active.awarded``
 
 
 
