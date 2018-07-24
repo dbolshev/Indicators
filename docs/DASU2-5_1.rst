@@ -78,9 +78,9 @@ Pозрахунок індикатора вимикається тоді, кол
 
 - Індикатор розраховується для наступних статусів процедур:
    
-  - ``active.tendering``
- 
-  - ``active.enquiries``
+  - ``active.qualification`` 
+  
+  - ``active.awarded``
 
 
 
