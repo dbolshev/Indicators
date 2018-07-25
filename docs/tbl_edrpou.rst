@@ -53,11 +53,19 @@ tbl_edrpou
 
 Для розрахунку використовуються наступні поля з API модуля тендеринга:
 
+- ``data.procurementMethodType``
+
 - ``data.bids.tenderers.identifier.id``
 
 - ``data.bids.tenderers.identifier.scheme``
 
 - ``data.tenderers.identifier.legalName``
+
+- ``data.awards.suppliers.identifier.scheme``
+
+- ``data.awards.suppliers.identifier.id``
+
+- ``data.awards.suppliers.identifier.legalName``
 
 
 Формула розрахунку
@@ -65,7 +73,9 @@ tbl_edrpou
 
 1. Перед розрахунком аналітична таблиця очищується.
 
-2. Вибираємо усі ідентифікатори учасників (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) та їх юридичні назви.
+2. Для процедур звітування ``data.procurementMethodType = 'reporting'`` вибираємо ідентифікатори переможців (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) та їх юридичні назви.
+
+2. Для усіх інших типів процедур вибираємо усі ідентифікатори учасників (конкатенація ``data.bids.tenderers.identifier.scheme`` та ``data.bids.tenderers.identifier.id``) та їх юридичні назви.
 
 3. Групуємо по ідентифікаторам.
 
