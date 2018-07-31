@@ -79,8 +79,6 @@
 
 Виходячи з подій, що вмикають та вимикають розрахунок індикатора, маємо наступні умови розрахунку:
 
-- Індикатор *не розраховується* для об'єктів ``data.awards``, в яких присутній блок ``data.awards.complaints`
-
 - Індикатор розраховується на наступні статуси процедур:
   
   - ``active.qualification``
@@ -112,6 +110,8 @@
 1.1. Якщо в секції  data.awards, що посилається на лот через ``data.awards.lotID``, де data.awards.status = 'pending', немає документа, у якого data.awards.documents.format != 'application/pkcs7-signature' та data.awards.documents.format != 'application/yaml'.
 
 1.2. Якщо  в секції  data.awards, що посилається на лот через ``data.awards.lotID``, де data.awards.status = 'pending', присутній документ, у якого data.awards.documents.format != 'application/pkcs7-signature' та data.awards.documents.format != 'application/yaml' та з моменту переходу його в статус 'pending' не пройшло 20 *робочих* днів.
+
+1.3. Для об'єктів ``data.awards``, в яких присутній блок ``data.awards.complaints``
 
 2. Індикатор приймає значення ``0``, якщо виконується нижченаведена умова.
 
