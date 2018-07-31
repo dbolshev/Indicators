@@ -71,8 +71,6 @@
 
 Виходячи з подій, що вмикають та вимикають розрахунок індикатора, маємо наступні умови розрахунку:
 
-- Індикатор *не розраховується* для об'єктів ``data.awards``, в яких присутній блок ``data.awards.complaints``
-
 - Індикатор розраховується на наступні статуси процедур:
   
   - ``active.qualification``
@@ -106,6 +104,8 @@
 1.1. На лот через ``data.awards.lotID`` посилається об'єкт з ``data.awards``, де ``data.awards.status = 'pending'``.
 
 1.2. Від поточної дати до дати ``data.awards.date`` менше 5 *робочих* днів.
+
+1.3. Для об'єктів ``data.awards``, в яких присутній блок ``data.awards.complaints``
 
 1.3. Якщо в секції ``data.awards``, де ``data.awards.status = 'pending'``, є документ, у якого ``data.documents.format != 'application/pkcs7-signature'``  та ``data.awards.documents.author != 'bots'``.
 
