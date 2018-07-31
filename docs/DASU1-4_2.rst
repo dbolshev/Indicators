@@ -105,7 +105,7 @@
 Формула розрахунку
 ==================
 
-1. Індикатор приймає значення ``-2``, якщо виконуються нижченаведені умови.
+1. Індикатор приймає значення ``-2``, якщо виконується хоча б одна з нижченаведених умов.
 
 1.1. Якщо в секції  data.awards, що посилається на лот через ``data.awards.lotID``, де data.awards.status = 'pending', немає документа, у якого data.awards.documents.format != 'application/pkcs7-signature' та data.awards.documents.format != 'application/yaml'.
 
