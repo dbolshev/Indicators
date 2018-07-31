@@ -101,13 +101,11 @@
 
 1. Індикатор приймає значення ``-2``, якщо виконується хоча б одна з нижченаведених умов. 
 
-1.1. На лот через ``data.awards.lotID`` посилається об'єкт з ``data.awards``, де ``data.awards.status = 'pending'``.
+1.1. На лот через ``data.awards.lotID`` посилається об'єкт з ``data.awards``, де ``data.awards.status = 'pending'`, але від поточної дати до дати ``data.awards.date`` пройшло менше 5 *робочих* днів.
 
-1.2. Від поточної дати до дати ``data.awards.date`` менше 5 *робочих* днів.
+1.2. Для об'єктів ``data.awards``, в яких присутній блок ``data.awards.complaints``
 
-1.3. Для об'єктів ``data.awards``, в яких присутній блок ``data.awards.complaints``
-
-1.4. Якщо в секції ``data.awards``, де ``data.awards.status = 'pending'``, є документ, у якого ``data.documents.format != 'application/pkcs7-signature'``  та ``data.awards.documents.author != 'bots'``.
+1.3. Якщо в секції ``data.awards``, де ``data.awards.status = 'pending'``, є документ, у якого ``data.documents.format != 'application/pkcs7-signature'``  та ``data.awards.documents.author != 'bots'``.
 
 2. Індикатор приймає значення ``0``, якщо виконуються нижченаведена умова.
 
