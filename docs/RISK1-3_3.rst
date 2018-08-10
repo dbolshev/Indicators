@@ -122,9 +122,9 @@ RISK1-3_3 Ненакладення Замовником електронного
 
 2. Якщо у json-документі, що відповідає процедурі, ``data.contracts.status = 'active'`` та присутній блок ``data.contracts.documents``, переходимо до наступного кроку.
 
-3. Усі документи з блоку ``data.contracts.documents`` перевіряються на предмет їх формату ``data.contracts.documents.format``. Якщо серед них немає ``data.contracts.documents.format = 'application/pkcs7-signature'``, то переходимо до наступного пункту.
+3. Усі документи з блоку ``data.contracts.documents`` перевіряються на предмет їх формату ``data.contracts.documents.format``. Якщо серед них є ``data.contracts.documents.format = 'application/pkcs7-signature'``, то індикатор приймає значення ``0``. Якщо серед них немає ``data.contracts.documents.format = 'application/pkcs7-signature'``, то переходимо до наступного пункту.
 
-4. Знаходимо  ідентификатор блоку ``data.contracts.id``. За ним знаходимо об'єкт в модулі контрактингу. Знаходимо там усі документи ``data.documents`` такі, що ``data.documents.documentOf = 'contract'``. Якщо серед них немає жодного, для якого ``data.documents.format = 'application/pkcs7-signature'``, то індикатор приймає значення ``1``.
+4. Знаходимо  ідентификатор блоку ``data.contracts.id``. За ним знаходимо об'єкт в модулі контрактингу. Знаходимо там усі документи ``data.documents`` такі, що ``data.documents.documentOf = 'contract'``. Якщо серед них є ``data.contracts.documents.format = 'application/pkcs7-signature'``, то індикатор приймає значення ``0``. Якщо серед них немає жодного, для якого ``data.documents.format = 'application/pkcs7-signature'``, то індикатор приймає значення ``1``.
 
 Порядок визначення лоту, на який спрацьовує індикатор, наступний:
 
