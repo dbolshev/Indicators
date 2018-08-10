@@ -20,5 +20,4 @@
    tbl_meanStdOfBuyerByCPV4
    tbl_monopolyCPV4
    tbl_nearThresholdOneSupplier
-   tbl_dasu32
    tbl_edrpou
