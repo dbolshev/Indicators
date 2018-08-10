@@ -99,6 +99,7 @@ RISK1-3_3 Ненакладення Замовником електронного
 Для розрахунку індикатора використовуються наступні поля з API модуля тендеринга:
 
 - ``data.contracts``
+- ``data.contracts.status``
 - ``data.contracts.id``
 - ``data.contracts.documents``
 - ``data.contracts.documents.format``
@@ -117,7 +118,9 @@ RISK1-3_3 Ненакладення Замовником електронного
 
 1. Якщо у json-документі, що відповідає процедурі, немає блоку ``data.contracts.documents``, індикатор приймає значення ``-2``. Розрахунок завершується.
 
-2. Якщо у json-документі, що відповідає процедурі, присутній блок ``data.contracts.documents``, переходимо до наступного кроку.
+2. Якщо у json-документі, що відповідає процедурі немає жодного об'єкту, що має ``data.contracts.status = 'active'``, індикатор приймає значення ``-2``.
+
+2. Якщо у json-документі, що відповідає процедурі, ``data.contracts.status = 'active'`` та присутній блок ``data.contracts.documents``, переходимо до наступного кроку.
 
 3. Усі документи з блоку ``data.contracts.documents`` перевіряються на предмет їх формату ``data.contracts.documents.format``. Якщо серед них немає ``data.contracts.documents.format = 'application/pkcs7-signature'``, то переходимо до наступного пункту.
 
