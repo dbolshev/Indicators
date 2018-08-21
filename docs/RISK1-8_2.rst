@@ -124,7 +124,7 @@ RISK1-8_2 Договір опубліковано більше ніж через
 
 Індикатор приймає значення ``1`` для лота, якщо виконуються всі нижченаведені умови.
 
-1. На цей лот через ланцюг ``data.contracts.awardID``-``data.awards.lotID`` *не поислається* жоден об'єкт ``data.contracts``, у якого ``data.contracts.status = 'active'``
+1. На цей лот через ланцюг ``data.contracts.awardID``-``data.awards.lotID`` *не поислається* жоден об'єкт ``data.contracts``, у якого ``data.contracts.documents.format != 'application/pkcs7-signature'`` та ``data.contracts.status = 'active'``.
 
 2. Від поточної дати до ``data.awards.date`` пройшло більше ніж 22 дні.
 
