@@ -21,3 +21,4 @@
    tbl_monopolyCPV4
    tbl_nearThresholdOneSupplier
    tbl_edrpou
+   tbl_supplierForPEWith3CPV
