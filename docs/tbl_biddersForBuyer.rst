@@ -67,7 +67,7 @@ tbl_biddersForBuyer
 
 1. Перед розрахунком аналітична таблиця очищується.
 
-2. До уваги беруться усі процедури, у яких ``data.procurementMethodType`` мають бути ``belowThreshold``, ``aboveThresholdUA`` або ``aboveThresholdEU``. Процедури повинні бути завершені, тобто ``data.status = 'complete'``
+2. До уваги беруться усі процедури, у яких ``data.procurementMethodType`` мають бути  ``aboveThresholdUA`` або ``aboveThresholdEU``. Процедури повинні бути завершені, тобто ``data.status = 'complete'``
 
 3. Для кожного учасника знаходимо унікальних замовників (``data.procuringEntity.identifier.id``), у процедурах яких цей учасник брав участь.
 
