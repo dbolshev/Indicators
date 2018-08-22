@@ -98,7 +98,7 @@ RISK2-2_2П. Постачальник виступає учасником тіл
 
 Якщо у json-документі, що відповідає процедурі присутній хоча б один об'єкт ``data.contracts`` зі статусом ``data.contracts.status = 'pending'``, переходимо до наступного кроку.
 
-Для кожного постачальника, що має ``data.contracts.suppliers.identifier.id``, з об'єктів `data.contracts`` зі статусом ``data.contracts.status = 'pending'`` перевіряємо список Замовників з таблиці ``tbl_biddersForBuyer``. Якщо він єдиний та його id дорівнює ``data.ProcuringEntity.identifier.id`` процедури, то індикатор приймає значення "``1``". 
+Для кожного постачальника, що має ``data.contracts.suppliers.identifier.id``, з об'єктів `data.contracts`` зі статусом ``data.contracts.status = 'pending'`` перевіряємо список Замовників з таблиці :ref:`tbl_biddersForBuyer`. Якщо він єдиний та його id дорівнює ``data.ProcuringEntity.identifier.id`` процедури, то індикатор приймає значення "``1``". 
 
 Якщо Постачальник в таблиці не єдиний, або в таблиці взагалі немає рядків для даного постачальника, індикатор приймає значення ``0``.
 
