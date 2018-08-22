@@ -69,11 +69,7 @@ tbl_biddersForBuyer
 
 2. До уваги беруться усі процедури, у яких ``data.procurementMethodType`` мають бути ``belowThreshold``, ``aboveThresholdUA`` або ``aboveThresholdEU``. Процедури повинні бути завершені, тобто ``data.status = 'complete'``
 
-3. Для кожного учасника (``data.bids.tenderers.identifier.id``) вираховується кількість участей у процедурах (``data.bids.status = 'active'``).
+3. Для кожного учасника знаходимо унікальних замовників (``data.procuringEntity.identifier.id``), у процедурах яких цей учасник брав участь.
 
-4. До уваги беруться учасники, які брали участь у 3 та більше процедурах.
-
-5. Для кожного учасника знаходимо унікальних замовників (``data.procuringEntity.identifier.id``), у процедурах яких цей учасник брав участь.
-
-6. Для кожного унікального замовника робимо рядок у таблиці: ``data.bids.tenderers.identifier.id`` та ``data.procuringEntity.identifier.id``.
+4. Для кожного унікального замовника робимо рядок у таблиці: ``data.bids.tenderers.identifier.id`` та ``data.procuringEntity.identifier.id``.
 
