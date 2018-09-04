@@ -95,6 +95,8 @@ RISK2-2П. Відкрита процедура з дискваліфікація
 
 - ``data.awards.lotID``
 
+- ``data.awards.status``
+
 Для розрахунку індикатора використовуються наступні аналітичні таблиці:
 
 - :ref:`tbl_suppliersSingleBuyer``
@@ -112,9 +114,10 @@ RISK2-2П. Відкрита процедура з дискваліфікація
 
 2. До уваги беруться замовник (конкатенація ``data.procuringEntity.identifier.scheme`` та ``data.procuringEntity.identifier.id``) та постачальник (конкатенація ``data.contracts.suppliers.identifier.scheme`` та ``data.contracts.suppliers.identifier.id``).
 
-3. Індикатор приймає значення ``1``, якщо взята до розгляду пара "замовник-постачальник" знайдена у аналтичній таблиці :ref:`tbl_suppliersSingleBuyer``
+3. Індикатор приймає значення ``1``, якщо:
+  3.1. Взята до розгляду пара "замовник-постачальник" знайдена у аналтичній таблиці :ref:`tbl_suppliersSingleBuyer``
+  3.2. На лот, на який розраховується індикатор (визначається зі зв'язки ``data.contracts.awardID``-``data.awards.lotID``), посилається хоча б один об'єкт ``data.awards``, що має ``data.awards.status = 'unsuccessful'``.
 
-4. Лот, на який спрацьовує індикатор, визначається зі зв'язки ``data.contracts.awardID``-``data.awards.lotID``
 
 Фактори, що впливають на неточність розрахунку
 ==============================================
