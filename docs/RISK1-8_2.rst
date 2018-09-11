@@ -128,6 +128,8 @@ RISK1-8_2 Договір опубліковано більше ніж через
 
 1. На цей лот через ланцюг ``data.contracts.awardID``-``data.awards.lotID`` *не поислається* жоден об'єкт ``data.contracts``, у якого ``data.contracts.documents.format != 'application/pkcs7-signature'`` та ``data.contracts.status = 'active'``.
 
+2. Знаходимо  ідентификатор блоку ``data.contracts.id``. За ним знаходимо об'єкт в модулі контрактингу. Знаходимо там усі документи ``data.documents`` такі, що ``data.documents.documentOf = 'contract'``. Таких документів немає, або серед них є тільки ``data.contracts.documents.format = 'application/pkcs7-signature'``.
+
 2. Від поточної дати до ``data.awards.date`` пройшло більше ніж 22 дні.
 
 В інших випадках індикатор дорівнює ``0``.
