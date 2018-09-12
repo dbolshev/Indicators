@@ -121,9 +121,13 @@ RISK1-13_4 Переможець торгів був обраний за відс
 
   в) якщо порівнювана дата ``data.bids.documents`` більша за дату ``data.awards.date``, то індикатор приймає значення ``1`` для лота ``data.awards.lotID``
 
-5. Якщо блок ``data.bids.documents``, що належить до об'єкту ``data.bids``, пов'язаного з даним об'єктом ``data.awards`` через ``data.awards.bid_id = bids.id``, відсутній на момент розрахунку, то індикатор приймає значення ``1`` для лота ``data.awards.lotID``
+5. Для процедур типу ``aboveThresholdUA``: якщо блок ``data.bids.documents``, що належить до об'єкту ``data.bids``, пов'язаного з даним об'єктом ``data.awards`` через ``data.awards.bid_id = bids.id``, відсутній на момент розрахунку, то індикатор приймає значення ``1`` для лота ``data.awards.lotID``
 
-6. Якщо блок ``data.bids.documents``, що належить до об'єкту ``data.bids``, пов'язаного з даним об'єктом ``data.awards`` через ``data.awards.bid_id = bids.id``, має лише ``data.bids.documents.documentOf = 'lot'``, у яких ``data.bids.documents.relatedItem !=data.awards.lotID``, то індикатор приймає значення ``1`` для лота ``data.awards.lotID``.
+  5.1. Для процедур типу ``aboveThresholdEU``: якщо блоки ``data.bids.documents``, ``data.bids.eligibilityDocuments`` та ``data.bids.financialDocuments``, що належать до об'єкту ``data.bids``, пов'язаного з даним об'єктом ``data.awards`` через ``data.awards.bid_id = bids.id``, відсутні на момент розрахунку, то індикатор приймає значення ``1`` для лота ``data.awards.lotID``
+
+6. Для процедур типу ``aboveThresholdUA``: якщо блок ``data.bids.documents``, що належить до об'єкту ``data.bids``, пов'язаного з даним об'єктом ``data.awards`` через ``data.awards.bid_id = bids.id``, має лише ``data.bids.documents.documentOf = 'lot'``, у яких ``data.bids.documents.relatedItem !=data.awards.lotID``, то індикатор приймає значення ``1`` для лота ``data.awards.lotID``.
+
+  6.1. Для процедур типу ``aboveThresholdEU``: якщо блоки ``data.bids.documents``, ``data.bids.eligibilityDocuments`` та ``data.bids.financialDocuments``, що належать до об'єкту ``data.bids``, пов'язаного з даним об'єктом ``data.awards`` через ``data.awards.bid_id = bids.id``, мають лише ``data.bids.(documents/financialDocuments/eligibilityDocuments).documentOf = 'lot'``, у яких ``data.bids.(documents/financialDocuments/eligibilityDocuments).relatedItem !=data.awards.lotID``, то індикатор приймає значення ``1`` для лота ``data.awards.lotID``.
 
 7. В інших випадках індикатор дорівнює ``0``.
 
