@@ -124,8 +124,6 @@ RISK-1-8-2. Договір опубліковано більше ніж чере
 
 Якщо на лот через поле ``data.awards.lotID`` не посилається об'єкт ``data.awards``, у якого ``data.awards.status = 'active'``, індикатор приймає значення ``-2``. Розрахунок завершується.
 
-Якщо на цей лот через поле ``data.awards.lotID`` посилається об'єкт ``data.awards``, у якого ``data.awards.status = 'active'`` та відсутній блок ``data.awards.complaints`` переходимо на наступний крок.
-
 Індикатор приймає значення ``1`` для лота, якщо виконуються всі нижченаведені умови.
 
 1. На цей лот через ланцюг ``data.contracts.awardID``-``data.awards.lotID`` *не поислається* жоден об'єкт ``data.contracts``, у якого ``data.contracts.documents.format != 'application/pkcs7-signature'`` та ``data.contracts.status = 'active'``.
