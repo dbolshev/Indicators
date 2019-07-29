@@ -102,6 +102,7 @@ RISK-1-8-2. Договір опубліковано більше ніж чере
 - ``data.lots.status``
 - ``data.awards``
 - ``data.awards.lotID``
+- ``data.awards.status``
 - ``data.awards.date``
 - ``data.contracts``
 - ``data.contracts.awardID``
@@ -130,7 +131,7 @@ RISK-1-8-2. Договір опубліковано більше ніж чере
 
 2. Знаходимо  ідентификатор блоку ``data.contracts.id``. За ним знаходимо об'єкт в модулі контрактингу. Знаходимо там усі документи ``data.documents`` такі, що ``data.documents.documentOf = 'contract'``. Таких документів немає, або серед них є тільки ``data.contracts.documents.format = 'application/pkcs7-signature'``.
 
-3. Для процедур, що не містять блок ``data.awards.complaints`` від поточної дати до ``data.awards.date`` пройшло більше ніж 22 дні. Для процедур, що містять блок ``data.awards.complaints`` від поточної дати до ``data.awards.date`` пройшло більше ніж 37 днів.
+3. Для процедур, що не містять блок ``data.awards.complaints`` від поточної дати до ``data.awards.date`` з блоку, що має ``data.awards.status = 'active'``, пройшло більше ніж 22 дні. Для процедур, що містять блок ``data.awards.complaints`` від поточної дати до ``data.awards.date``, що має ``data.awards.status = 'active'``, пройшло більше ніж 37 днів.
 
 В інших випадках індикатор дорівнює ``0``.
 
