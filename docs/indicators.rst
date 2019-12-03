@@ -55,5 +55,3 @@
    RISK2-15_1
    RISK2-16_2
    RISK2-17_2
-   RISK3-1(test)
-   RISK3-2(test)
